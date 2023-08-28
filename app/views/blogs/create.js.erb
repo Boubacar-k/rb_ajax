@@ -1,1 +1,2 @@
-$(".favorite-count-<%= blog.id %>").text("<%= blog.favorites.length + 1 %>");
+document.querySelector(".favorite-link-<%= @blog.id %>").innerHTML = "<%= j(render 'blogs/favorite', blog: @blog) %>";
+console.log("clicked");
